@@ -1,7 +1,7 @@
 indent-motion
 =============
 
-indent-motion is a Vim plugin which maps `<Leader>[` and `<Leader>]` to move to the beginning and end (respectively) of your current indentation-delimited block (`<Leader>` refers to your current user-defined "mapleader", which is `\` by default).
+indent-motion is a Vim plugin which maps `<Leader>[` and `<Leader>]` in normal, visual, and operator-pending modes to move to the beginning and end (respectively) of your current indentation-delimited block (`<Leader>` refers to your current user-defined "mapleader", which is `\` by default).
 
 For example (using JavaScript):
 
