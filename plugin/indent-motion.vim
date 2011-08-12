@@ -25,8 +25,11 @@ function! <SID>to_indent_end(up, vis)
     catch 'buf_bound'
         return
     endtry
+    if a:vis
+        normal! gv
+    endif
     while indent(ln) >= orig_ind || getline(ln) =~ '^$'
-        execute 'normal! ' . (a:vis ? 'gv' : '') . (a:up ? 'k' : 'j')
+        execute 'normal! ' . (a:up ? 'k' : 'j')
         try
             let ln = s:next_line(ln, a:up)
         catch 'buf_bound'
